@@ -1,7 +1,7 @@
 ---
 title: "DIY.org"
 date: 2019-07-15T10:40:05-07:00
-draft: true
+draft: false
 ---
 ![DIY.org skill viewer](../../images/diy/page.png)
 
