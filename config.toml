@@ -1,0 +1,144 @@
+baseurl = "https://kaelb.github.io/"
+languageCode = "en-us"
+title = "Kael Barton"
+theme = "hugo-strata-theme"
+disqusShortname = "spf13"
+# Enable Google Analytics by inserting your tracking code
+googleAnalytics = ""
+# Define how many posts should appear on a site
+paginate = 10
+
+[params]
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Kael Barton"
+	description = "Kael Barton's personal website and portfolio."
+
+	# Format dates with Go's time formatting
+	date_format = "2006-01-02"
+
+	# Add read time estimates in the format "X min read"
+	show_read_time = false
+
+	# Add custom assets with their paths relative to the static folder
+	custom_js   = []
+	custom_css  = []
+
+	[params.rss]
+		hide = true
+
+
+	[params.sidebar]
+		# Replace the avatar with a picture of your own under static/images
+		avatar = "kael.jpg"
+		# Use Markdown to format the string. This works nearly all over the theme
+		bio = """I'm **Kael Barton**.<br>
+		**Creative developer** of unique experiences.<br>
+		**Unity** generalist.<br>
+		**Shaders** and **realtime effects** are my specialty.<br>
+		*I love translating artist's ideas into something computers can run.*
+		"""
+		# The icons will be shown if you enter your username
+		twitter = ""
+		github = "kaelb"
+		gitlab = ""
+		dribbble = ""
+		facebook = ""
+		googleplus = ""
+		flickr = ""
+		linkedin = "kaelb"
+
+		copyright = [
+			# "&copy; John Doe",
+			# "Design: [HTML5 UP](//html5up.net)",
+			# "Demo Images: [Unsplash](//unsplash.com/)"
+		]
+
+
+	[params.about]
+		hide = true
+		title = "I love translating artist's ideas into something computers can run."
+		content = "Unity generalist. Shaders and realtime effects are my specialty. "
+
+
+	[params.portfolio]
+		hide  = false
+		# title = "Recent Work"
+
+		# The images and thumbnails are stored under static/images
+		# Create and change subfolders as you like
+		[[params.portfolio.gallery]]
+			link = "post/chorus"
+			thumb = "chorus/thumb.jpg"
+			title = "Chorus"
+
+		[[params.portfolio.gallery]]
+			link = "post/tonandi"
+			thumb = "tonandi/thumb.jpg"
+			title = "Tonandi"
+
+		[[params.portfolio.gallery]]
+			link = "post/only-one"
+			thumb = "only-one/thumb.jpg"
+			title = "Only One"
+
+		[[params.portfolio.gallery]]
+			link = "post/beach-body-bros"
+			thumb = "beach-body-bros/thumb.jpg"
+			title = "Beach Body Bros"
+
+		[[params.portfolio.gallery]]
+			link = "post/diy"
+			thumb = "diy/thumb.jpg"
+			title = "DIY.org"
+
+	[params.recentposts]
+		hide  = true
+		title = "Recent blog posts"
+
+	[params.contact]
+		hide  = true
+		title = "Get In Touch"
+		content = "Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor."
+
+		# This can be exact coordinates or a searchable address in google maps
+		gmaps_address = "39.7889055,-120.5443524"
+		address = [
+			"1234 Somewhere Rd.",
+			"Nashville, TN 00000",
+			"United States"
+		]
+		phone = "000-000-0000"
+
+		# Since this template is static, the contact form uses www.formspree.io as a
+		# proxy. The form makes a POST request to their servers to send the actual
+		# email. Visitors can send up to a 1000 emails each month for free.
+	    #
+	    # What you need to do for the setup?
+	    #
+	    # - set your email address under 'email' below
+	    # - upload the generated site to your server
+	    # - send a dummy email yourself to confirm your account
+	    # - click the confirm link in the email from www.formspree.io
+	    # - you're done. Happy mailing!
+		email = "hello@example.com"
+
+		[params.contact.form]
+			# Set custom strings for the form if your native
+			# language isn't English
+			name = "Name"
+			email = "Email"
+			message = "Message"
+			submit = "Send message"
+
+
+# Menu links that appear on the left sidebar
+# [[menu.main]]
+# 	name = "Home"
+# 	url  = "/"
+# 	weight = 10
+
+# [[menu.main]]
+# 	name = "Blog"
+# 	url  = "post/"
+# 	weight = 0
