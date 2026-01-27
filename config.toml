@@ -8,6 +8,9 @@ googleAnalytics = ""
 # Define how many posts should appear on a site
 paginate = 10
 
+[markup.goldmark.renderer]
+	unsafe = true
+
 [params]
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
@@ -32,11 +35,9 @@ paginate = 10
 		# Replace the avatar with a picture of your own under static/images
 		avatar = "kael.jpg"
 		# Use Markdown to format the string. This works nearly all over the theme
-		bio = """I'm **Kael Barton**.<br>
-		**Creative developer** of unique experiences.<br>
-		**Unity** generalist.<br>
-		**Shaders** and **realtime effects** are my specialty.<br>
-		*I love translating artist's ideas into something computers can run.*
+		bio = """I&rsquo;m **Kael Barton**, a **creative developer** of unique interactive experiences in **Unity** and **Unreal Engine**.
+		**Shaders**, **realtime effects**, and **graphics performance** are my specialties.
+		I love translating artists&rsquo; ideas into something computers can run.
 		"""
 		# The icons will be shown if you enter your username
 		twitter = ""
